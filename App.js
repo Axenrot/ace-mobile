@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Store from "./pages/Store";
 import Profile from "./pages/Profile";
 import NavBar from "./components/user-interface/NavBar";
+import HomeHeader from "./components/HomeHeader";
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +22,7 @@ export default function App() {
           component={Home}
           options={{
             title: "Acelera Peças",
+            headerTitle: () => <HomeHeader />,
             headerStyle: {
               backgroundColor: "#ff0708",
             },
